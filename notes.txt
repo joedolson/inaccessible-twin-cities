@@ -1,0 +1,3 @@
+List of checks:
+
+Reset.css - :focus styles
