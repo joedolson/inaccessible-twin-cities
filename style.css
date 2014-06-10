@@ -14,7 +14,7 @@ Text-domain: accessible-twin-cities
 
 /* import reset and menu styles */
 @import url( '../accessible-twin-cities/style.css' );
-@import url( 'css/menu.css' );
+@import url('css/menu.css');
 
 /* Colors */
 .header { background-color: #fff; color: #777; }
