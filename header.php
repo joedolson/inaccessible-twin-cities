@@ -5,6 +5,7 @@
 <head>
 	<title><?php wp_title( ' &raquo; ', true, 'right' ); ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
+	<meta name="viewport" content="width=device-width" />	
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

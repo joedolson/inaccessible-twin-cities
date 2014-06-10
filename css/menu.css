@@ -1,23 +1,39 @@
 .menu-toggle:before {
 	font-family: dashicons;
 	content: "\f333";
-	font-size: 2em;
-	background: #000;
-	border-radius: 2px;
-	padding: 2px;
-	margin: 0 auto;
-	cursor: pointer;
+	vertical-align: middle;
+	font-size: 1.6em;
+	line-height: 1;
 }
 
+/* Colors */
+.primary-menu, .primary-menu a, .primary-menu li li.current_page_item a {
+	background: #333;
+	color: #ccc;	
+}
+
+/*.primary-menu li.current_page_item a , .primary-menu li.current_page_item a:active, .primary-menu li.current_page_item a:focus, .primary-menu a:hover,.primary-menu a:active, .primary-menu a:focus, .primary-menu li.current_page_item a:hover, .primary-menu li li a:hover, .primary-menu li li a:active, .primary-menu li li a:focus { */
+.primary-menu li.current_page_item a , .primary-menu a:hover, .primary-menu li.current_page_item a:hover, .primary-menu li li a:hover {
+	background: #444;
+	color: #ccc;
+}
+
+.primary-menu ul ul ul li a {
+	background: #555;
+	color: #ccc;
+}
+
+.primary-menu li.current_page_item a:hover {
+	background: #333;
+	color: #ccc;
+}
+
+/* Sizing, Layout and Text Decoration */
 .primary-menu, .secondary-menu {
 	margin: .5em 0;
 	padding: 0;
 	font-size: 1.1em;
 	position: relative;
-}
-
-.primary-menu {
-	background: #222;
 }
 
 .primary-menu ul, .secondary-menu ul {
@@ -36,8 +52,6 @@
 .primary-menu a, .primary-menu a:visited {
 	padding: .75em 1em;
 	text-decoration: none;
-	background: #222;
-	color: #ccc;
 }
 
 .secondary-menu a {
@@ -45,30 +59,20 @@
 }
 
 .primary-menu li.current_page_item a {
-	background: #777;
-	color: #ccc;
 	/* text-decoration: underline; */
+	text-decoration: none;
 }
-/*
-.primary-menu li.current_page_item a:active, .primary-menu li.current_page_item a:focus {
-	background: #555;
-	color: #fff;
-}
-*/
+
 .primary-menu li.current_page_item li a {
 	text-decoration: none;
 }
 
-/*.primary-menu a:hover,.primary-menu a:active, .primary-menu a:focus {*/
-.primary-menu a:hover {
-	background: #777;
-	color: #ccc;
+.primary-menu a:hover,.primary-menu a:active, .primary-menu a:focus, .primary-menu li.current_page_item a:hover {
 	/* text-decoration: underline; */
+	text-decoration: none;
 }
 
 .primary-menu li.current_page_item a:hover {
-	background: #666;
-	color: #ccc;
 	text-decoration: none; 
 }
 
@@ -93,15 +97,6 @@
 	font-size: .95em;
 }
 
-/* .primary-menu li li a:hover, .primary-menu li li a:active, .primary-menu li li a:focus { */
-.primary-menu li li a:hover {
-	background: #777 !important;
-}
-
-.primary-menu li li.current_page_item a {
-	background: #222;
-}
-
 .primary-menu li ul {
 	position: absolute;
 	width: 12em;
@@ -110,17 +105,17 @@
 }
 
 /* .primary-menu li:hover ul, .primary-menu li:active ul, .primary-menu li:focus ul, .primary-menu li.focus ul, .focus ul { */
-.primary-menu li:hover ul {
+.primary-menu li:hover ul { 
 	left: auto;
 	display: block;
+}
+
+/*.primary-menu li:hover ul, .primary-menu li.focus ul { */
+.primary-menu li:hover ul {
+	left: auto;
 }
 
 .primary-menu ul ul ul {
 	position: relative;
 	left: 0;
-}
-
-.primary-menu ul ul ul li a {
-	background: #444;
-	color: #ccc;
 }
