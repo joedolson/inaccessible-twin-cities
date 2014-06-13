@@ -36,6 +36,10 @@ a:hover {
 	color: #55f;
 }
 
+a:focus {
+	outline: none;
+}
+
 .wp-caption-text {
 	color: #888;
 }
