@@ -4,7 +4,12 @@
     <?php while (have_posts()) : the_post(); ?>
 	<div <?php post_class(); ?>>
 		<?php if ( has_post_thumbnail() ) { ?>
-			<div class='featured-image'><?php the_post_thumbnail(); ?></div>
+			<?php
+				// OMG DONT DO THIS 
+				$featured_image = get_post_thumbnail_id();
+				$img_src = wp_get_attachment_image_src( $featured_image, 'large' );
+			?>
+			<div class='featured-image'><img src="<?php echo $img_src[0]; ?>" /></div>
 		<?php }
 			/* Handles posts without titles */
 			$post_link = ''; 
