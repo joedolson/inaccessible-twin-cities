@@ -17,23 +17,23 @@ Text-domain: accessible-twin-cities
 @import url('css/menu.css');
 
 /* Colors */
-.header { background-color: #fff; color: #777; }
-.sidebar { background-color: #fff; color: #777; }
-.content { background-color: #fff; color: #777; }
-.wrapper { background-color: rgba( 240,240,240, .85 ); color: #777; }
-.page-wrapper { background-color: #fff; color: #777; }
+.header { background-color: #fff; color: #888; }
+.sidebar { background-color: #fff; color: #888; }
+.content { background-color: #fff; color: #888; }
+.wrapper { background-color: rgba( 240,240,240, .85 ); color: #888; }
+.page-wrapper { background-color: #fff; color: #888; }
 
 .sticky {
-	color: #666;
+	color: #555;
 }
 
 a {
-	color: #44e;
+	color: #33a;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #55f;
+	color: #44b;
 }
 
 a:focus {
@@ -50,6 +50,11 @@ a:focus {
 
 .comment.bypostauthor {
 	color: #888; 
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+	background-color: inherit;
+	color: inherit;
 }
 
 /* Utility Classes */
