@@ -14,7 +14,7 @@
 			/* Handles posts without titles */
 			$post_link = ''; 
 			if ( get_the_title() == '' ) {
-				$post_link = wpautop( sprintf( __( '<a href="%s" rel="bookmark">View untitled post</a>', 'accessible-twin-cities' ), get_the_permalink() ) );
+				$post_link = wpautop( sprintf( __( '<a href="%s" rel="bookmark">View untitled post</a>', 'universal' ), get_the_permalink() ) );
 			} else {
 		?>
 		<h1 class="post-title" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -22,14 +22,14 @@
 			}	
 			get_template_part( 'post-meta' ); ?>
 		<div class='post-content' id="post-<?php the_ID(); ?>">
-			<?php the_content( sprintf( __( 'Finish reading <em>%s</em>', 'accessible-twin-cities' ), get_the_title() ) ); ?>
+			<?php the_content( sprintf( __( 'Finish reading <em>%s</em>', 'universal' ), get_the_title() ) ); ?>
 			<?php echo $post_link; ?>
 			<?php edit_post_link('Edit this entry.', '<p class="edit">', '</p>'); ?>
 		</div> 
 
 		<div class="comments">
 			<?php wp_link_pages(); ?>
-			<?php comments_popup_link( __( 'Comments (0)', 'accessible-twin-cities' ), __( 'Comments (1)', 'accessible-twin-cities' ), __( 'Comments (%)', 'accessible-twin-cities' ) ); ?>
+			<?php comments_popup_link( __( 'Comments (0)', 'universal' ), __( 'Comments (1)', 'universal' ), __( 'Comments (%)', 'universal' ) ); ?>
 		</div>
 
 		<!--
@@ -47,7 +47,7 @@
 	endif; ?>
 
     <div class="prev_next">
-    <?php posts_nav_link('&nbsp; &nbsp;', __( '&larr; Previous Posts','accessible-twin-cities' ), __( 'Next Posts &rarr;','accessible-twin-cities' ) ); ?>
+    <?php posts_nav_link('&nbsp; &nbsp;', __( '&larr; Previous Posts','universal' ), __( 'Next Posts &rarr;','universal' ) ); ?>
     </div>
 
 <?php get_sidebar(); ?>

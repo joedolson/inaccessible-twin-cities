@@ -2,10 +2,10 @@
 		</main>
 	</div> <?php // #content .content ?>
 <?php
-	$atc_options = get_option( 'atc_options' );
+	$universal_options = get_option( 'universal_options' );
 ?>
 <div id="sidebar" class="sidebar clear">
-	<?php apply_filters( 'atc_top_of_sidebar', '' ); ?>
+	<?php apply_filters( 'universal_top_of_sidebar', '' ); ?>
 	<?php if ( is_front_page() ) {
 		$sidebars = wp_get_sidebars_widgets();
 		$home_sidebar = $sidebars['ps2'];
@@ -34,5 +34,5 @@
 		}
 	?>
 	</div>
-	<?php apply_filters( 'atc_bottom_of_sidebar', '' ); ?>	
+	<?php apply_filters( 'universal_bottom_of_sidebar', '' ); ?>	
 </div>

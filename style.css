@@ -1,19 +1,19 @@
 /*
 Theme Name: Inaccessible Twin Cities
 Theme URI: http://www.joedolson.com/articles/inaccessible-twin-cities/
-Description: Inaccessible Twin Cities is a child theme for demonstrating the difference between an accessible and inaccessible theme. Child of Accessible Twin Cities.
+Description: Inaccessible Twin Cities is a child theme for demonstrating the difference between an accessible and inaccessible theme. Child of Universal.
 Author: Joseph C Dolson
 Author URI: http://www.joedolson.com
-Template: accessible-twin-cities
+Template: universal
 Version: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: translation-ready, responsive-layout, two-columns, light, editor-style, custom-header, custom-menu, custom-background, custom-colors, featured-images, sticky-post
-Text-domain: accessible-twin-cities
+Text-domain: universal
 */
 
 /* import reset and menu styles */
-@import url( '../accessible-twin-cities/style.css' );
+@import url( '../universal/style.css' );
 @import url('css/menu.css');
 
 /* Colors */

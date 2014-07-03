@@ -14,7 +14,7 @@
 		<?php }
 			$post_link = ''; 
 			if ( get_the_title() == '' ) {
-				$post_link = wpautop( sprintf( __( '<a href="%s" rel="bookmark">View untitled post</a>', 'accessible-twin-cities' ), get_the_permalink() ) );
+				$post_link = wpautop( sprintf( __( '<a href="%s" rel="bookmark">View untitled post</a>', 'universal' ), get_the_permalink() ) );
 			} else {
 		?>
 		<?php 
@@ -57,7 +57,7 @@
 	endif; ?>
 
 	<div class="prev_next">
-    <?php posts_nav_link('&nbsp; &nbsp;', __( '&larr; Previous Posts','accessible-twin-cities' ), __( 'Next Posts &rarr;','accessible-twin-cities' ) ); ?>
+    <?php posts_nav_link('&nbsp; &nbsp;', __( '&larr; Previous Posts','universal' ), __( 'Next Posts &rarr;','universal' ) ); ?>
 	</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
