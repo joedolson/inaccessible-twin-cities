@@ -2,15 +2,15 @@
 @media only screen and (min-width: 800px) {
 	/* Colors */
 
-	.primary-menu, .primary-menu a, .primary-menu li li.current_page_item a {
-		background: #333;
-		color: #ccc;	
+	.primary-menu, .primary-menu a, .primary-menu li li.current_page_item a, .primary-menu li.current_page_item a:focus, .primary-menu li li a:focus {
+		background: #333 !important;
+		color: #ccc !important;	
 	}
 
 	/*.primary-menu li.current_page_item a , .primary-menu li.current_page_item a:active, .primary-menu li.current_page_item a:focus, .primary-menu a:hover,.primary-menu a:active, .primary-menu a:focus, .primary-menu li.current_page_item a:hover, .primary-menu li li a:hover, .primary-menu li li a:active, .primary-menu li li a:focus { */
 	.primary-menu li.current_page_item a , .primary-menu a:hover, .primary-menu li.current_page_item a:hover, .primary-menu li li a:hover {
-		background: #444;
-		color: #ccc;
+		background: #444 !important;
+		color: #ccc !important;
 	}
 
 	.primary-menu ul ul ul li a {
