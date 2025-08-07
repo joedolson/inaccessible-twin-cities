@@ -36,3 +36,4 @@
 			<div id="content" class="content clear">
 				<main>
 					<div class='post-wrapper'>
+						<?php get_search_form(); ?>
