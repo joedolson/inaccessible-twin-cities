@@ -4,6 +4,16 @@
 	<title><?php wp_title( ' &raquo; ', true, 'right' ); ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no; maximum-scale=1" />	
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		let current = document.querySelectorAll( '[aria-current]' );
+		console.log( current );
+		current.forEach( (el) => {
+			console.log( el );
+			el.removeAttribute( 'aria-current' );
+		});
+	});
+	</script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
